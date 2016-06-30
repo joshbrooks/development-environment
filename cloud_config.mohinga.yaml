@@ -109,7 +109,7 @@ packages:
   - python-dev
   - python-lxml
   - libxml2-dev
-  - libxslt-dev
+  - libxslt1-dev
   - libzip2
   - zlib1g-dev
   - mariadb-client
@@ -130,3 +130,5 @@ runcmd:
   - sudo service ssh restart
   - pip install --upgrade pip
   - pip install virtualenvwrapper
+  - sudo adduser josh docker
+  - sudo service docker restart
